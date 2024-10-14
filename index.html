@@ -11,7 +11,7 @@
 <body>
 <div id="app">
   <header>
-    <h1>My Store</h1>
+    <h1 id="store-header-identifier">My Store</h1>
     <nav>
       <ul>
         <li><a href="#" id="electronics">Electronics</a></li>
@@ -50,6 +50,10 @@
         const bestSellers = getByRating(4.5);
         renderProducts(bestSellers);
       });
+      document.getElementById('store-header-identifier')?.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        renderProducts(products);
+        });
     </script>
   </main>
   <footer>
