@@ -28,25 +28,25 @@
       renderProducts(products);
 
       document.getElementById('electronics')?.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault();
         const electronicsProducts = getByCategory('Electronics');
         renderProducts(electronicsProducts);
       });
 
       document.getElementById('clothing')?.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault();
         const clothingProducts = getByCategory('Clothing');
         renderProducts(clothingProducts);
       });
 
       document.getElementById('groceries')?.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault();
         const groceryProducts = getByCategory('Groceries');
         renderProducts(groceryProducts);
       });
 
       document.getElementById('bestSeller')?.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
+        event.preventDefault();
         const bestSellers = getByRating(4.5);
         renderProducts(bestSellers);
       });
