@@ -50,10 +50,11 @@
         const bestSellers = getByRating(4.5);
         renderProducts(bestSellers);
       });
+
       document.getElementById('store-header-identifier')?.addEventListener('click', (event) => {
         event.preventDefault(); 
         renderProducts(products);
-        });
+      });
     </script>
   </main>
   <footer>
